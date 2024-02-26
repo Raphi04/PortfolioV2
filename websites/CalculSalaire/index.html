@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcul Salaire</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <img src="ressource/logo.png">
+        </header>
+
+        <section>
+            <article>
+                <div id="salaire">
+                    <div class="salaireContainer">
+                        <h2>Indiquez votre salaire BRUT</h2>
+                        <div class="calculContainer">
+                            <label for="horaireBrut">Horaire brut</label>
+                            <input placeholder="exemple : 10.96" type="number" id="horaireBrut" onKeyUp="calculSalaire('horaireBrut')">
+                        </div>
+                        <div class="calculContainer">
+                            <div>
+                                <label for="mensuelBrut">Mensuel brut</label>
+                                <p id="pourcentageInfo">Non Cadre : -22%</p>
+                            </div>
+                            <input placeholder="0" type="number" id="mensuelBrut" onKeyUp="calculSalaire('mensuelBrut')">
+                        </div>
+                        <div class="calculContainer">
+                            <label for="annuelBrut">Annuel brut</label>
+                            <input placeholder="0" type="number" id="annuelBrut" onKeyUp="calculSalaire('annuelBrut')">
+                        </div>
+                    </div>
+                    
+                    <div class="salaireContainer">
+                        <h2>Indiquez votre salaire NET</h2>
+                        <div class="calculContainer">
+                            <label for="horaireNet">Horaire net</label>
+                            <input placeholder="0" type="number" id="horaireNet" onKeyUp="calculSalaire('horaireNet')">
+                        </div>
+                        <div class="calculContainer">
+                            <label for="mensuelNet">Mensuel net</label>
+                            <input placeholder="0" type="number" id="mensuelNet" onKeyUp="calculSalaire('mensuelNet')">
+                        </div>
+                        <div class="calculContainer">
+                            <label for="annuelNet">Annuel net</label>
+                            <input placeholder="0" type="number" id="annuelNet" onKeyUp="calculSalaire('annuelNet')">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="statut">
+                    <h2>Sélectionnez votre statut</h2>
+                    <div id="statutContainer">
+                        <div  class="statutInput" onClick="changePourcentage('nonCadre')">
+                            <input checked onClick="changePourcentage('changePourcentage')" type="radio" name="profession" id="salariéNonCadre">
+                            <label for="salaréNonCadre">Salarié non-cadre</label>
+                        </div>
+                        <div class="statutInput" onClick="changePourcentage('Cadre')">
+                            <input onClick="changePourcentage('changePourcentage')" type="radio" name="profession" id="salariéCadre">
+                            <label for="salaréCadre">Salarié cadre</label>
+                        </div>
+                        <div class="statutInput" onClick="changePourcentage('fonctionPublique')">
+                            <input onClick="changePourcentage('changePourcentage')" type="radio" name="profession" id="fonctionPublique">
+                            <label for="fonctionPublique">Fonction publique</label>
+                        </div>
+                        <div class="statutInput" onClick="changePourcentage('professionLibérale')">
+                            <input onClick="changePourcentage('changePourcentage')" type="radio" name="profession" id="professionLibérale">
+                            <label for="professionLibérale">Profession libérale</label>
+                        </div>
+                        <div class="statutInput" onClick="changePourcentage('portageSalarial')">
+                            <input onClick="changePourcentage('changePourcentage')" type="radio" name="profession" id="portageSalarial">
+                            <label for="portageSalarial">Profession salarial</label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

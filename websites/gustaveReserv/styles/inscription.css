@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../ressources/font/Montserrat.ttf);
+}
+html, body{
+    width:100%;
+    height:100%;
+    margin:0px;
+}
+body{
+    margin-top: 80px;
+}
+.error{
+    color:red;
+    margin:0px;
+    font-size: 15px;;
+}
+img{
+    margin-left:5px;
+    width:25px;
+    display:block;
+    cursor: pointer;
+}
+#content{
+    display:flex;
+    flex-direction: column;
+    background-image:url("../ressources/classroom.jpg");
+    background-size:cover;
+    background-position:0px -150px;
+    width:100%;
+}
+#opacity{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#formContainer{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items:start;
+    flex-direction:column;
+    background-color:white;
+    border: 5px solid #254598;
+    border-radius:20px;
+    width:40%;
+    height:90%;
+}
+#submit{
+    font-size:18px;
+    background-color:#254598;
+    border-radius:10px;
+    width: 120px;
+    height: 40px;
+    color:white;
+    border:none;  
+    cursor:pointer;  
+}
+#submit:hover{
+    background-color:#1C3471;
+}
+a{
+    text-decoration:none;
+}
+a:active, a:visited{
+    color:#254598;
+}
+h2{
+    color:#254598;
+    font-size:40px;
+    font-weight:bold;
+    font-family: system-ui, Roboto;
+    margin:0px;
+    margin-top:10px;
+    margin-left:20px;
+}
+#formContent{
+    border: 0px;
+    border-left:#254598 4px solid;
+    margin-left:40px;
+    margin-top:10px;
+    padding-left:10px;
+    margin-bottom: 0;
+    width:80%;
+    font-size: 12px;
+}
+#submitForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    border:none;
+}
+#connexion{
+    border-bottom: 2px solid #254598;
+}
+#formName{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 70px;
+}
+#formMail{
+    height:70px;
+}
+#formDate{
+    height:70px;
+}
+#formName input{
+    width: 100%;
+}
+.formPassword{
+    display: flex;
+    flex-direction: column;
+    height:71.4px;
+}
+
+#mail{
+    width:100%;
+}
+.eyes{
+    display: flex;
+}
+article{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    position: relative;
+    width: 100%;
+    font-family: system-ui, roboto;
+}
+label{
+    display: block;
+    color:#254598;
+    font-size: 20px;
+}
+input{
+    border:#254598 1px solid;
+    border-radius: 10px;
+    padding-left:7px;
+    height:20px;
+}
+span{
+    color: rgb(255, 0, 0);
+}

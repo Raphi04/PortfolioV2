@@ -1,0 +1,76 @@
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.article > article{
+    width: 35%;
+    margin-top: 5%;
+}
+.articleIMG{
+    margin-left: 12%;
+    display: flex;
+    justify-content: center;
+}
+.articleIMG > img{
+    width: 65%;
+    border: 1px solid black;
+}
+.articleIMG2{
+    margin-right: 12%;
+    display: flex;
+    justify-content: center;
+}
+.articleIMG2 > img{
+    width: 65%;
+    border: 1px solid black;
+}
+.articleTEXT{
+    margin-right: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.articleTEXT > h2 {
+    font-size: 25px;
+}
+.articleTEXT2{
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.articleTEXT2 > h2 {
+    font-size: 25px;
+}
+.author{
+    margin-top: 15px;
+    font-size: 12px;
+    font-style: italic;
+    color: #2F2F2F;
+}
+.chapot{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.description{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: justify;
+}
+hr{
+    margin-top: 5%;
+    color: #2F2F2F;
+    width: 50%;
+}
+.article:target{
+    padding-top: 103px;
+    margin-top: -103px
+}

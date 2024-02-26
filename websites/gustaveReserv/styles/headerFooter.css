@@ -1,0 +1,196 @@
+/*HEADER*/
+header{
+    position: fixed;
+    top:0px;
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #254598;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+    z-index: 20;
+
+}
+nav{
+    display:flex;
+    align-items: center;
+    margin-right:64px;
+}
+a{
+    text-decoration: none;
+}
+a:active, a:visited{
+    color:#254598;
+}
+#home{
+    margin-left:64px;
+    width:236px;
+}
+#homeBlanc{
+    width: 20px;
+    display: block;
+}
+.arriane{
+    color: white;
+    font-size:20px;
+    font-weight:700;
+    font-family:system-ui, Roboto;
+    margin:5px;
+}
+#user{
+    margin-left:20px;
+    width:35px;
+    height:35px;
+    cursor: pointer;
+}
+#nameHeader{
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
+}
+#compte{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 40px;
+    margin-left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+#compte:hover{
+    background-color: #1f3a7f;
+
+}
+#menu{
+    display: none;
+    background-color: #254598;
+    border-radius: 10px;
+    color:white;
+    position: fixed;
+    width:250px;
+    top:85px;
+    right:64px;
+}
+#menuStart{
+    color:white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    transition-property: background-color, padding;
+    transition-duration: 0.3s;
+}
+#menuStart:hover{
+    padding: 12px;
+    background-color: #1f3a7f;
+}
+.menuContent{
+    color:white;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-top: 1px solid white;
+    transition-property: background-color, padding;
+    transition-duration: 0.3s;
+}
+.menuContent:hover{
+    padding: 12px;
+    background-color: #1f3a7f;
+}
+#menu>p:hover{
+    padding: 12px;
+    background-color: #1f3a7f;
+}
+#logout{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 0px 0px 10px 10px;
+    transition-property: background-color, padding;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color:white;
+    border-top: 1px solid white;
+}
+#logout:hover{
+    padding: 12px;
+    background-color: #1f3a7f;
+}
+.visibility{
+    display: block !important;
+}
+/*FOOTER*/
+#prefooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: #254598;
+}
+footer{
+    width: 100%;
+    background-color: #1D3163;
+    color:white;
+    font-family: system-ui, Roboto;
+    padding-bottom: 45px;
+}
+#footer1{
+    display:flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.footerContent{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+h3{
+    font-size: 25px;
+    margin: 0;
+    margin-top: 35px;
+}
+.footerContent > a{
+    margin-top:3%;
+    color:white;
+    text-decoration: none;
+}
+.footerContent > p{
+    margin: 0;
+    margin-top:3%;
+}
+#socialMedia{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+.socialMedia > img{
+    width:35px;
+    margin-left:5px
+}
+hr{
+    color:white;
+    width:70%;
+    margin-top: 3%;
+}
+#footer2{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+#footer2 >p{
+    width:auto;
+    margin:0;
+}
+#footer2 > a{
+    color:white;
+    margin-left: 3%;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}

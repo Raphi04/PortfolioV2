@@ -1,0 +1,831 @@
+:root {
+    --dark-red-hover: #5c1017;
+    --dark-red: #8C1B24;
+    --black: #0B0D0C;
+    --grey: #575757;
+    --white: #E4DAD0;
+    --bright-white: #F0E9E2;
+
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+}
+
+body {
+    position: relative;
+}
+
+i {
+    color: var(--bright-white);
+}
+
+a:hover {
+    color: var(--bright-white);
+}
+
+.displayNone {
+    display: none !important;
+}
+
+.opacityNone {
+    opacity: 0 !important;
+}
+
+.darkRedButton {
+    background-color: var(--dark-red);
+    border-radius: 30px;
+    padding: 0.6rem 2rem;
+    font-size: 1.3rem;
+    color: var(--bright-white);
+    transition: background-color 0.3s ease;
+}
+
+.darkRedButton:hover, .darkRedButton:focus {
+    cursor: pointer;
+    background-color: var(--dark-red-hover);
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+#accueil {
+    scroll-margin: 90px;
+    background-image: url("ressources/background.jpg");
+    background-size: cover;
+    background-position: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(11, 13, 12, 45%);
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    padding: 0px 50px;
+    width: 100%;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.blackHeader {
+    background-color: var(--black);
+    box-shadow: 0px 0px 25px 0px var(--grey);
+
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#menu-desktop nav a {
+    position: relative;
+}
+
+#menu-desktop nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    width: 100%;
+    transform: scale(0);
+    border-bottom: 2px solid var(--white);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+#menu-desktop nav a:hover::after , #menu-desktop nav a:focus::after{
+    transform: scale(1);
+}
+
+.activeHeader::after {
+    transform: scale(1) !important;
+}
+
+header a {
+    color: var(--bright-white);
+}
+
+header i {
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+header i:hover {
+    color: var(--bright-white);
+}
+
+#menu-phone {
+    display: none;
+}
+
+#menu-collapse {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(9, 10, 10, 99%);
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(99%);
+}
+
+#menu-collapse ul {
+    width: 100%;
+}
+
+#menu-collapse li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(44, 49, 49, 0.99);
+}
+
+#menu-collapse li:last-child {
+    border: none;
+}
+
+#menu-collapse li a {
+    padding: 1rem 0;
+    display: block;
+    width: 100%;
+}
+
+#title {
+    padding: 90px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title h2 {
+    color: var(--white);
+    font-size: 4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#title h1 {
+    color: var(--bright-white);
+    font-size: 6rem;
+    text-align: center;
+}
+
+#title h3 {
+    margin-top: 15px;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*---------------------------------------A PROPOS-----------------------------------------*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+#aPropos {
+    scroll-margin: 90px;
+    padding: 75px;
+    background-color: var(--black);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aPropos h2 {
+    margin-bottom: 75px;
+    color: var(--bright-white);
+    font-size: 3rem;
+}
+
+#aPropos article {
+    width: 85%;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    padding: 0 2.5rem;
+    color: var(--bright-white);
+    font-size: 1.5rem;
+    transition: border-color 0.3s ease-out;
+}
+
+#aPropos article:hover {
+    border-color: var(--bright-white);
+}
+
+#aPropos article p {
+    margin: 1.5rem 0px;
+}
+
+#aPropos #skillContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 75px 0px;
+    gap: 1.5rem;
+
+}
+
+#aPropos #skillContainer .skill {
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    padding: 15px 0px;
+    color: var(--bright-white);
+    transition: border-color 0.3s ease-out;
+}
+
+#aPropos #skillContainer .skill:hover {
+    border-color: var(--bright-white);
+}
+
+#aPropos #skillContainer .skill i {
+    font-size: 7.5rem;
+}
+
+#aPropos #skillContainer .skill p {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+#aPropos a {
+    border: 2px solid var(--grey);
+    padding: 15px 45px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: var(--bright-white);
+    transition: background-color 0.3s ease-out, border 0.3s ease-out;
+}
+
+#aPropos a:hover , #aPropos a:focus{
+    background-color: var(--dark-red);
+    border: 2px solid var(--dark-red);
+}
+
+hr {
+    margin: auto;
+    background-color: var(--bright-white);
+    width: 70%;
+    height: 1px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*---------------------------------------PORTFOLIO-----------------------------------------*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+#portfolio {
+    scroll-margin: 90px;
+    padding: 75px;
+    background-color: var(--black);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio h2 {
+    margin-bottom: 75px;
+    color: var(--bright-white);
+    font-size: 3rem;
+}
+
+#portfolio article {
+    text-align: center;
+    width: 55%;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    padding: 0 2rem;
+    color: var(--bright-white);
+    font-size: 1.5rem;
+    transition: border-color 0.3s ease-out;
+}
+
+#portfolio article:hover {
+    border-color: var(--bright-white);
+}
+
+#portfolio article p {
+    margin: 1rem 0px;
+}
+
+#portfolio #selectTag {
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#portfolio #selectTag .tag {
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    padding: 0.7rem 2rem;
+    font-size: 1.5rem;
+    color: var(--bright-white);
+    transition: border-color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+#portfolio #selectTag .tag:hover {
+    cursor: pointer;
+    border-color: var(--dark-red);
+    background-color: var(--dark-red);
+}
+
+#portfolio #selectTag .tag.selectedTag {
+    border-color: var(--dark-red);
+    background-color: var(--dark-red);
+}
+
+#portfolio #projectsContainer {
+    margin-top: 55px;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem 4.5rem;
+}
+
+#portfolio #projectsContainer a {
+    position: relative;
+}
+
+#portfolio #projectsContainer a .projectMoreInfo {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(11, 13, 12, 85%);
+    border-radius: 15px;
+    color: var(--bright-white);
+    overflow: hidden;
+    transition: width 0.3s linear, border 0.3s linear;
+}
+
+#portfolio #projectsContainer a .projectMoreInfo.visible {
+    border: 2px solid var(--bright-white);
+    width: 100%;
+}
+
+#portfolio #projectsContainer a .projectMoreInfo h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#portfolio #projectsContainer a .projectMoreInfo p {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#portfolio #projectsContainer .project {
+    opacity: 1;
+    transition: opacity 0.7s linear;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid var(--grey);
+}
+
+#portfolio #projectsContainer .project#ACF2L {
+    background-image: url("ressources/projects/ACF2L.png");
+}
+
+#portfolio #projectsContainer .project#avengedSevenFold {
+    background-image: url("ressources/projects/avengedSevenFold.png");
+}
+
+#portfolio #projectsContainer .project#vivy {
+    background-image: url("ressources/projects/vivy.jpg");
+}
+
+#portfolio #projectsContainer .project#magazine {
+    background-image: url("ressources/projects/magazine.jpg");
+}
+
+#portfolio #projectsContainer .project#gustaveReserv {
+    background-image: url("ressources/projects/gustave.jpg");
+}
+
+#portfolio #projectsContainer .project#aimTrainer {
+    background-image: url("ressources/projects/aimTrainer.jpg");
+}
+
+#portfolio #projectsContainer .project#razer {
+    background-image: url("ressources/projects/razer.jpg");
+}
+
+#portfolio #projectsContainer .project#calculSalaire {
+    background-image: url("ressources/projects/calculSalaire.jpg");
+}
+
+#portfolio #projectsContainer .project#XSpace {
+    background-image: url("ressources/projects/XSpace.jpg");
+}
+
+footer {
+    height: 120px;
+    color: var(--bright-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 25px 0px var(--grey);
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*-------------------------------------MEDIA QUERIES--------------------------------------*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 1440px){
+
+    #portfolio #projectsContainer .project {
+        width: 500px;
+        height: 300px;
+    }
+
+    #portfolio article {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    #portfolio h2 {
+        font-size: 2.5rem;
+    }
+
+    #aPropos h2 {
+        font-size: 2.5rem;
+    }
+
+    #aPropos article {
+        font-size: 1.2rem;
+    }
+
+    #aPropos #skillContainer {
+        width: 80%;
+    }
+
+    #aPropos #skillContainer .skill {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    #aPropos #skillContainer .skill i{
+        font-size: 5rem;
+    }
+
+    #aPropos #skillContainer .skill p {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+
+    footer {
+        height: 100px;
+    }
+
+    #portfolio #projectsContainer .project {
+        width: 350px;
+        height: 225px;
+    }
+
+    #portfolio #selectTag .tag {
+        font-size: 1.2rem;
+    }
+
+    #portfolio #selectTag {
+        gap: 2rem;
+    }
+
+    #portfolio article {
+        width: 85%;
+    }
+
+    #portfolio h2 {
+        margin-bottom: 25px;
+    }
+
+    #portfolio {
+        padding: 50px;
+    }
+
+    #aPropos {
+        padding: 50px;
+    }
+
+    #aPropos h2 {
+        margin-bottom: 25px;
+    }
+
+    #aPropos #skillContainer {
+        width: 80%;
+        padding: 25px 0px;
+    }
+
+    #aPropos #skillContainer .skill {
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    #aPropos #skillContainer .skill i{
+        font-size: 3rem;
+    }
+
+    #aPropos #skillContainer .skill p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    #aPropos a {
+        font-size: 1.2rem;
+    }
+
+    #menu-desktop {
+        display: none;
+    }
+
+    #menu-phone {
+        display: flex;
+    }
+
+    #title h2 {
+        font-size: 3rem;
+    }
+
+    #title h1 {
+        font-size: 5rem;
+    }
+
+    #title h3 {
+        font-size: 1.2rem;
+    }
+
+    .darkRedButton {
+        font-size: 1.2rem;
+    }
+}    
+
+@media (max-width: 768px) {
+
+    #portfolio #projectsContainer a .projectMoreInfo p {
+        font-size: 1.5rem;
+        display: inline !important;
+    }
+
+    #portfolio #projectsContainer a .projectMoreInfo h4 {
+        font-size: 1.2rem;
+        display: inline !important;
+    }
+
+    #portfolio #projectsContainer a .projectMoreInfo {
+        background-color: rgba(11, 13, 12, 85%);
+        border: 1px solid var(--white);
+        width: 100% !important;
+    }
+
+    #portfolio #projectsContainer .project {
+        width: 300px;
+    }
+
+    #portfolio #projectsContainer {
+        gap: 3rem 3.5rem;
+    }
+
+    #portfolio #selectTag .tag {
+        padding: 0.7rem;
+    }
+
+    #portfolio #selectTag {
+        gap: 1rem;
+    }
+
+    #menu-collapse {
+        font-size: 1.2rem;
+    }
+
+    #aPropos #skillContainer {
+        width: 95%;
+    }
+
+    #aPropos #skillContainer .skill {
+        width: 150px;
+        height: 150px;
+    }
+
+    #aPropos #skillContainer .skill i{
+        font-size: 5rem;
+    }
+
+    #aPropos #skillContainer .skill p {
+        font-size: 1.2rem;
+    }
+
+    #accueil {
+        height: 90%;
+    }
+
+    #title h2 {
+        font-size: 2rem;
+    }
+
+    #title h1 {
+        font-size: 2.5rem;
+    }
+
+    #title {
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    #portfolio #projectsContainer .project {
+        width: 350px;
+        height: 220px;
+    }
+
+    #portfolio #projectsContainer {
+        margin-top: 25px;
+    }
+
+    #portfolio #selectTag .tag {
+        padding: 10px;
+        font-size: 1rem;
+        width: 150px;
+        text-align: center;
+    }
+
+    #portfolio #selectTag {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    #portfolio article {
+        padding: 0rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    #portfolio h2 {
+        font-size: 1.8rem;
+    }
+
+    #portfolio {
+        padding: 25px;
+    }
+
+    #aPropos {
+        padding: 25px;
+    }    
+
+    #aPropos h2 {
+        font-size: 1.8rem;
+    }
+
+    #aPropos article {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    #aPropos #skillContainer .skill {
+        width: 115px;
+        height: 115px;
+    }
+
+    #aPropos #skillContainer .skill i {
+        font-size: 3.5rem;
+    }
+
+    #aPropos #skillContainer .skill p {
+        font-size: 1rem;
+    }
+
+    #aPropos a {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
+
+    #menu-collapse {
+        font-size: 1rem;
+    }
+
+    #accueil {
+        height: 100%;
+    }
+
+    header {
+        padding: 0px 25px;
+    }
+
+    #title h2 {
+        font-size: 1.5rem;
+    }
+
+    #title h1 {
+        font-size: 1.8rem;
+    }
+
+    #title h3 {
+        font-size: 1rem;
+    }
+
+    #menu-collapse li a {
+        padding: 0.7rem 0;
+    }
+    
+}
+
+@media (max-width: 375px) {
+
+    footer {
+        margin-top: 25px;
+        height: 80px;
+        font-size: 1rem;
+    }
+
+    #portfolio #projectsContainer .project {
+        width: 300px;
+        height: 200px;
+    }
+
+    #portfolio #selectTag .tag {
+        width: 150px;
+        padding: 10px;
+    }
+
+    #portfolio h2 {
+        margin-top: 25px;
+    }
+
+    #portfolio {
+        padding: 0px
+    }
+
+    #aPropos a {
+        padding: 15px 20px;
+    }
+
+    #aPropos article {
+        width: 100%;
+    }
+
+    #aPropos {
+        padding: 25px 10px;
+    }
+}
+

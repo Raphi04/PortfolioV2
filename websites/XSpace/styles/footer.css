@@ -1,0 +1,53 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+p, h1, h2, a{
+    margin:0px
+}
+a, a:visited, a:active{
+    text-decoration: none;
+}
+/*CSS POUR LE FOOTER*/
+footer{
+    padding-top:3%;
+    padding-bottom:3%;
+    background-color: #2F2F2F;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+footer > section{
+    width:33.333%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.footContent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.footContent > h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.footContent > p, .footContent > a > p{
+    margin-top: 7px;
+}
+.footContent > article{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.footContent > article > a > img{
+    width:45px;
+}
+.footContent > a{
+    color: white;
+}

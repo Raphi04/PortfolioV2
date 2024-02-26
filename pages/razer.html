@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+        <link rel="stylesheet" href="project.css" type="text/css">
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="../ressources/favicon.png">
+        <title>Portfolio | Raphael Cadete</title>
+    </head>
+    <body>
+        <header id="menu-desktop">
+            <a href="#">Raphael Cadete</a>
+            <nav>
+                <a href="../index.html#accueil" class="headerLink activeHeader" id="nav-accueil">Accueil</a>
+                <a href="../index.html#aPropos" class="headerLink" id="nav-aPropos">À propos</a>
+                <a href="../index.html#portfolio" class="headerLink" id="nav-portfolio">Portfolio</a>
+            </nav>
+            <a class="darkRedButton" href="../php/contact.php">Me contacter</a>
+        </header>
+        <header id="menu-phone">
+            <a href="#">Raphael Cadete</a>
+            <i id="menuIcon" class="fa-solid fa-bars" onClick="Menu()"></i>
+            <nav id="menu-collapse" class="displayNone opacityNone">
+                <ul>
+                    <li><a href="../index.html#accueil" onClick="Menu()">Accueil</a></li>
+                    <li><a href="../index.html#aPropos" onClick="Menu()">À propos</a></li>
+                    <li><a href="../index.html#portfolio" onClick="Menu()">Portfolio</a></li>
+                    <li><a href="../php/contact.php" onClick="Menu()">Me contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="projectContainer">
+            <div id="projectContent">
+                <div>
+                    <img src="../ressources/projects/razer_Project.jpg">
+                    <a class="info" href="../ressources/projects/recommandation.pdf" target="_blank">Voir plus</a>
+                </div>
+                <article>
+                    <h3><i>Écriture journalistique</i></h3>
+                    <h2>Razer Kraken Pro V2</h2>
+                    <p>Pour ce projet, nous devions écrire une article de recommandation de produit ayant un rapport avec l'air du numérique. Cette recommandation devait se faire exclusivement en anglais.</p>
+                    <div id="projectInfo">
+                        <div>
+                            <p class="info">Écriture journalistique</p>
+                        </div>
+                        <div>
+                            <p class="info">Anglais</p>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                </article>
+            </div>
+        <section id="otherProjects">
+            <h2>D'AUTRES PROJETS</h2>
+            <div>
+                <a href="vivy.html" onMouseOver="displayMoreInfo('vivy_MoreInfo')" onMouseLeave="hideMoreInfo('vivy_MoreInfo')">
+                    <div class="projectMoreInfo" id="vivy_MoreInfo">
+                        <h4 class="displayNone">Écriture journalistique</h4>
+                        <p class="displayNone">Vivy: Fluorite Eye's Song</p>
+                    </div>
+                    <div class="project redaction" id="vivy"></div>
+                </a>
+                <a href="gustave.html" onMouseOver="displayMoreInfo('ACF2L_MoreInfo')" onMouseLeave="hideMoreInfo('ACF2L_MoreInfo')">
+                    <div class="projectMoreInfo" id="ACF2L_MoreInfo">
+                        <h4 class="displayNone">Site de réservation</h4>
+                        <p class="displayNone">ACF2L</p>
+                    </div>
+                    <div class="project dev" id="ACF2L"></div>
+                </a>
+                <a href="avengedSevenFold.html" onMouseOver="displayMoreInfo('avengedSevendFold_MoreInfo')" onMouseLeave="hideMoreInfo('avengedSevendFold_MoreInfo')">
+                    <div class="projectMoreInfo" id="avengedSevendFold_MoreInfo">
+                        <h4 class="displayNone">Pochette CD</h4>
+                        <p class="displayNone">Avenged Sevenfold</p>
+                    </div>
+                    <div class="project graphism" id="avengedSevenFold"></div>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <p>© Raphael Cadete - 2024</p>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>

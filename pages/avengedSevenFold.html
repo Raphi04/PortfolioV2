@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+        <link rel="stylesheet" href="project.css" type="text/css">
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="../ressources/favicon.png">
+        <title>Portfolio | Raphael Cadete</title>
+    </head>
+    <body>
+        <header id="menu-desktop">
+            <a href="#">Raphael Cadete</a>
+            <nav>
+                <a href="../index.html#accueil" class="headerLink activeHeader" id="nav-accueil">Accueil</a>
+                <a href="../index.html#aPropos" class="headerLink" id="nav-aPropos">À propos</a>
+                <a href="../index.html#portfolio" class="headerLink" id="nav-portfolio">Portfolio</a>
+            </nav>
+            <a class="darkRedButton" href="../php/contact.php">Me contacter</a>
+        </header>
+        <header id="menu-phone">
+            <a href="#">Raphael Cadete</a>
+            <i id="menuIcon" class="fa-solid fa-bars" onClick="Menu()"></i>
+            <nav id="menu-collapse" class="displayNone opacityNone">
+                <ul>
+                    <li><a href="../index.html#accueil" onClick="Menu()">Accueil</a></li>
+                    <li><a href="../index.html#aPropos" onClick="Menu()">À propos</a></li>
+                    <li><a href="../index.html#portfolio" onClick="Menu()">Portfolio</a></li>
+                    <li><a href="../php/contact.php" onClick="Menu()">Me contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="projectContainer">
+            <div id="projectContent">
+                <div>
+                    <img src="../ressources/projects/avengedSevenFold_Project.jpg">
+                    <a class="info" href="../ressources/projects/avengedSevenFold_Project.pdf" target="_blank">Voir plus</a>
+                </div>
+                <article>
+                    <h3><i>Production graphique</i></h3>
+                    <h2>CD Avenged Sevenfold</h2>
+                    <p>Nous devions pour ce projet, sélectionner une musique que nous apprécions afin d'en réaliser la pochette CD. J'ai choisi la musique <i>Hail to the king</i> de Avenged SevenFold et je me suis inspiré de l'identité graphique du groupe.</p>
+                    <div id="projectInfo">
+                        <div>
+                            <p class="info">InDesign</p>
+                        </div>
+                        <div>
+                            <p class="info">Photoshop</p>
+                        </div>
+                        <div>
+                            <p class="info">Illustrator</p>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                </article>
+            </div>
+        <section id="otherProjects">
+            <h2>D'AUTRES PROJETS</h2>
+            <div>
+                <a href="vivy.html" onMouseOver="displayMoreInfo('vivy_MoreInfo')" onMouseLeave="hideMoreInfo('vivy_MoreInfo')">
+                    <div class="projectMoreInfo" id="vivy_MoreInfo">
+                        <h4 class="displayNone">Écriture journalistique</h4>
+                        <p class="displayNone">Vivy: Fluorite Eye's Song</p>
+                    </div>
+                    <div class="project redaction" id="vivy"></div>
+                </a>
+                <a href="acf2l.html" onMouseOver="displayMoreInfo('xspace_MoreInfo')" onMouseLeave="hideMoreInfo('xspace_MoreInfo')">
+                    <div class="projectMoreInfo" id="xspace_MoreInfo">
+                        <h4 class="displayNone">Site web vitrine</h4>
+                        <p class="displayNone">XSpace</p>
+                    </div>
+                    <div class="project dev" id="XSpace"></div>
+                </a>
+                <a href="acf2l.html" onMouseOver="displayMoreInfo('magazine_MoreInfo')" onMouseLeave="hideMoreInfo('magazine_MoreInfo')">
+                    <div class="projectMoreInfo" id="magazine_MoreInfo">
+                        <h4 class="displayNone">Production graphique</h4>
+                        <p class="displayNone">Magazine de mode</p>
+                    </div>
+                    <div class="project graphism" id="magazine"></div>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <p>© Raphael Cadete - 2024</p>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>

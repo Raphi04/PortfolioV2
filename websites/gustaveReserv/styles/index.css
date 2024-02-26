@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(ressources/font/Montserrat.ttf);
+}
+html, body{
+    width:100%;
+    height:100%;
+    margin:0px;
+}
+body{
+    margin-top: 80px;
+}
+#img1{
+    margin-left:5px;
+    width:37px;
+    display:block;
+    cursor: pointer;
+}
+a{
+    text-decoration:none;
+    color:#254598;
+}
+a:active, a:visited{
+    color:#254598;
+}
+h2{
+    color:#254598;
+    font-size:40px;
+    font-weight:bold;
+    font-family: system-ui, Roboto;
+    margin:0px;
+    margin-top:10px;
+    margin-left:20px;
+}
+article{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    position: relative;
+    width: 90%;
+    font-family: system-ui, roboto;
+    margin-left: 20px;
+}
+label{
+    display: block;
+    color:#254598;
+    font-size: 20px;
+}
+input{
+    border:#254598 1px solid;
+    border-radius: 10px;
+    height:20px;
+}
+span{
+    color: rgb(255, 0, 0);
+}
+#formContainer1{
+    margin-top: 6.5%;
+    justify-content: center;
+    align-items:start;
+    flex-direction:column;
+    background-color:white;
+    border: 5px solid #254598;
+    border-radius:20px;
+    width:30%;
+    height:90%;
+}
+#inscription{
+    margin-top: 2%;
+    margin-bottom: 6.5%;
+    background-color:white;
+    border: 5px solid #254598;
+    border-radius:20px;
+    color:#254598;
+    cursor: pointer;
+    text-align: center;
+    font-size:35px;
+    font-weight:bold;
+    font-family: system-ui, Roboto;
+    width:30%;
+    transition-duration:0.2s;
+    transition-property: background-color;
+}
+#inscription:hover{
+    background-color:rgb(228, 228, 228);
+}
+#Button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#eyes{
+    display: flex;
+}
+#content{
+    display:flex;
+    flex-direction: column;
+    background-image:url(../ressources/classroom.jpg);
+    background-size:cover;
+    background-position:0px -110px;
+    width:100%;
+}
+#opacity{
+    display:flex;
+    flex-direction: column ;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#submit{
+    margin-bottom: 20px;
+    font-size:18px;
+    background-color:#254598;
+    border-radius:10px;
+    width: 100%;
+    height: 50px;
+    color:white;
+    border:none;  
+    cursor:pointer;  
+}
+#submit:hover{
+    background-color:#1C3471;
+}
+#formPassword{
+    display: flex;
+    flex-direction: column;
+    height:71.4px;
+}
+#formCheckbox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#formMail{
+    margin-top: 10px;
+    height:60px;
+}
+.arriane{
+    color: #254598;
+    font-size:25px;
+    font-weight:700;
+    font-family:system-ui, Roboto;
+    margin:5px;
+}
+#mail{
+    width:100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+#mdp{
+    width:100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.error{
+    color:red;
+    margin:0px;
+    font-size: 15px;
+    margin-top: 7.5px;
+}

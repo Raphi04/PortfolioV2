@@ -1,0 +1,157 @@
+html, body{
+    width: 100%;
+    height:100%;
+    margin:0px;
+}
+p{
+    margin: 0px;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    font-size: 50px;
+    color:rgb(0, 0, 0);
+}
+.menu{
+    background-color: black;
+    color:white;
+}
+.menuButton{
+    font-family: calibri;
+    margin: 0px;
+    padding: 15px;
+    background-color: black;
+    color:white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+.menuButtonN{
+    color:black;
+    background-color: white;
+}
+.menuButton:hover{
+    background-color: rgb(29, 29, 29);
+}
+.menuButtonN:hover{
+    background-color: rgb(201, 201, 201);
+}
+#nuit{
+    position: absolute;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    bottom: 0%;
+    left:0%;
+    cursor: pointer;
+    width: 50px;
+}
+.game{
+    height:100%;
+    display: none;
+}
+.gameN{
+    background-color: black;
+}
+#gameMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+}
+.exitGame{
+    font-family: calibri;
+    margin: 10px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    position: relative; 
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    text-align: center;
+}
+.exitGame:hover{
+    background-color: rgb(29, 29, 29);
+}
+.exitGameN{
+    color: black;
+    background-color: white;
+}
+.exitGameN:hover{
+    background-color: rgb(201, 201, 201);
+}
+.count{
+    margin:10px;
+    color:black
+}
+.countN{
+    color:white;
+}
+.time{
+    color:black;
+}
+.timeN{
+    color:white;
+}
+.inGame{
+    border: 2px solid black;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height:80%;
+}
+.inGameN{
+    border: 2px solid white;
+}
+#circle{
+    position:relative;
+    background-color: red;
+    width: 50px;
+    height:50px;
+    border-radius:50%;
+    cursor: pointer;
+}
+#resultScreen{
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 50px;
+    font-size:30px;
+    border-radius: 20px;
+
+}
+.resultN{
+    border: 2px solid white;
+    color: white;
+}
+.timeResult{
+    margin-bottom: 30px;
+}
+.countResult{
+    margin-bottom: 30px;
+}
+#text{
+    font-size: 15px;
+}
+.text{
+    color:white;
+}
+.mistakes{
+    margin-bottom: 70px;
+}

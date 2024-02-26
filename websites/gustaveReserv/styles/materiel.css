@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(ressources/font/Montserrat.ttf);
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    font-family: system-ui, Roboto;
+    background-color: #eaeaea;
+}
+body{
+    margin-top: 80px;
+}
+p{
+    margin: 0px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+#recherche{
+    align-self:end;
+    width: 30%;
+    margin-bottom: 20px;
+}
+#searchInput{
+    border: none;
+    font-size: 15px;
+    padding: 2px;
+    border-radius: 20px;
+    padding-left: 20px;
+    width: 60%;
+    height: 80%;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#searchMit{
+    font-family: system-ui, roboto;
+    cursor: pointer;
+    border: none;
+    background-color: #254598;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#searchMit:hover{
+    background-color: #1f3a7f;
+}
+#notFound{
+    font-size: 40px;
+    margin-top: 214px;
+    margin-bottom: 250px;
+}
+.itemContainer{
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    color:black;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 95%;
+    height:350px;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+.item{
+    width: 30%;
+    height:100%;
+    display: flex;
+    border-right: 2px solid #254598;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemName{
+    background-color: #254598;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.img{
+    height:200px;
+    margin-bottom:10px
+}
+.itemInfo{
+    width: 20%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #254598;
+    justify-content: center;
+    align-items: center;
+}
+.itemInfo>p{
+    margin-bottom: 10px;
+}
+.itemDescription{
+    width: 50%;
+    height:100%;
+    padding-left: 100px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+.itemInteract{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.itemInteraction>input{
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #254598;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    box-shadow: 2px 2px 8px 0px rgb(138, 137, 137);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+.itemReserv{
+    margin-right: 10px;
+}
+.itemInteraction>input:hover{
+    background-color: #1f3a7f;
+}
+#pagination{
+    display: flex;
+}
+.pagiButton{
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: #254598;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+.pagiButton:hover{
+    background-color: #1f3a7f;
+}
+.pagiButtonHere{
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: #254598;
+    font-size: 20px;
+    border: none;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+.pagiButtonHere:hover{
+    background-color: rgb(245, 249, 255);
+}
+.footerButton{
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 20px;
+    color: #254598;
+    font-size: 20px;
+    border:none;
+    box-shadow: 2px 3px 8px 0px #0f1b3c;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+.footerButton:hover{
+    background-color: rgb(233, 233, 233);
+}

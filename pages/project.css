@@ -1,0 +1,363 @@
+body {
+    margin-top: 90px;
+}
+
+header{
+    box-shadow: 0px 0px 25px 0px var(--grey);
+    background-color: var(--black) !important;
+}
+
+a, a:hover, a:focus, a:visited {
+    color: var(--bright-white);
+}
+
+i {
+    font-weight: 600;
+}
+
+#projectContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    width: 100%;
+}
+
+#projectContainer #projectContent {
+    width: 100%;
+    padding: 0px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projectContainer #projectContent > div {
+    width: 45%;
+}
+
+#projectContainer #projectContent > div img{
+    width: 100%;
+    border-radius: 15px;
+    padding: 0px;
+    border: 2px solid var(--white);
+    margin-bottom: 25px;
+}
+
+#projectContainer #projectContent article {
+    width: 45%;
+    color: var(--bright-white);
+    padding-right: 150px;
+}
+
+#projectContainer #projectContent article h3{
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+#projectContainer #projectContent article h2 {
+    margin-top: -7px;
+    font-size: 3rem;
+    color: var(--bright-white);
+}
+
+#projectContainer #projectContent article p {
+    font-size: 1.2rem;
+}
+
+#projectContainer .info {
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-size: 1.5rem !important;
+    transition: background-color 0.3s ease-out, border 0.3s ease-out;
+}
+
+#projectContainer #projectContent > div a.info:hover, #projectContainer #projectInfo > div a.info:focus{
+    background-color: var(--dark-red);
+    border: 2px solid var(--dark-red);
+}
+
+#projectContainer #projectInfo {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    color: white;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#projectContainer #projectInfo .info:hover {
+    border-color: var(--bright-white);
+}
+
+hr {
+    width: 45%;
+    border: 2px solid var(--bright-white);
+}
+
+#otherProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 100px 75px;
+}
+
+#otherProjects h2 {
+    font-size: 2.5rem;
+    color: var(--bright-white);
+    margin-bottom: 75px;
+
+}
+
+#otherProjects > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#otherProjects > div a {
+    position: relative;
+}
+
+#otherProjects > div .project {
+    opacity: 1;
+    transition: opacity 0.7s linear;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid var(--grey);
+}
+
+#otherProjects > div .project#ACF2L {
+    background-image: url("../ressources/projects/ACF2L.png");
+}
+
+#otherProjects > div .project#avengedSevenFold {
+    background-image: url("../ressources/projects/avengedSevenFold.png");
+}
+
+#otherProjects > div .project#vivy {
+    background-image: url("../ressources/projects/vivy.jpg");
+}
+
+#otherProjects > div .project#magazine {
+    background-image: url("../ressources/projects/magazine.jpg");
+}
+
+#otherProjects > div .project#gustaveReserv {
+    background-image: url("../ressources/projects/gustave.jpg");
+}
+
+#otherProjects > div .project#aimTrainer {
+    background-image: url("../ressources/projects/aimTrainer.jpg");
+}
+
+#otherProjects > div .project#razer {
+    background-image: url("../ressources/projects/razer.jpg");
+}
+
+#otherProjects > div .project#calculSalaire {
+    background-image: url("../ressources/projects/calculSalaire.jpg");
+}
+
+#otherProjects > div .project#XSpace {
+    background-image: url("../ressources/projects/XSpace.jpg");
+}
+
+#otherProjects > div a .projectMoreInfo {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(11, 13, 12, 85%);
+    border-radius: 15px;
+    color: var(--bright-white);
+    overflow: hidden;
+    transition: width 0.3s linear, border 0.3s linear;
+}
+
+#otherProjects > div a .projectMoreInfo.visible {
+    border: 2px solid var(--bright-white);
+    width: 100%;
+}
+
+#otherProjects > div a .projectMoreInfo h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#otherProjects > div a .projectMoreInfo p {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*-------------------------------------MEDIA QUERIES--------------------------------------*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 1440px){
+    #otherProjects > div .project {
+        width: 350px;
+        height: 250px;
+    }
+
+    #otherProjects > div {
+        gap: 3rem;
+    }
+
+    #projectContainer #projectContent article {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 1024px){
+
+    #otherProjects > div .project {
+        width: 270px;
+        height: 200px;
+    }
+
+    #otherProjects > div {
+        gap: 1.5rem;
+    }
+
+    #otherProjects h2 {
+        margin-bottom: 50px;
+    }
+
+    #otherProjects {
+        padding: 50px;
+    }
+
+    #projectContainer #projectContent article {
+        width: 80%;
+        padding-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    #projectContainer a.info {
+        width: 60%;
+        text-align: center;
+    }
+
+    #projectContainer #projectContent > div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projectContainer #projectContent {
+        flex-direction: column-reverse;
+        padding: 0px 50px;
+    }
+
+    #projectContainer {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #otherProjects > div a .projectMoreInfo p {
+        font-size: 1.4rem;
+        display: inline !important;
+    }
+
+    #otherProjects > div a .projectMoreInfo h4 {
+        font-size: 1.2rem;
+        display: inline !important;
+    }
+
+    #otherProjects > div a .projectMoreInfo {
+        background-color: rgba(11, 13, 12, 85%);
+        border: 1px solid var(--white);
+        width: 100% !important;
+    }
+
+    #otherProjects h2 {
+        font-size: 2.2rem;
+    }
+
+    #projectContainer #projectContent article h2 {
+        font-size: 2.8rem;
+    }
+
+    #projectContainer {
+        padding: 75px 0px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    #otherProjects > div .project {
+        width: 350px;
+        height: 225px;
+    }
+
+    #otherProjects h2 {
+        font-size: 2rem;
+    }
+
+    #otherProjects {
+        padding: 50px 0px;
+    }
+
+    #projectContainer .info {
+        font-size: 1.2rem !important;
+        padding: 5px 10px;
+    }
+    
+    #projectContainer #projectInfo {
+        gap: 0.5rem;
+    }
+
+    #projectContainer #projectContent article h3 {
+        font-size: 1.3em;
+    }
+
+    #projectContainer #projectContent article h2 {
+        margin: 0px 0px 5px 0px;
+        font-size: 1.8rem;
+    }
+
+    #projectContainer #projectContent {
+        padding: 0px;
+    }
+
+    #projectContainer {
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    #otherProjects > div a .projectMoreInfo h4 {
+        font-size: 1rem;
+    }
+
+    #otherProjects > div a .projectMoreInfo p {
+        font-size: 1.2rem;
+    }
+    
+    #otherProjects > div .project {
+        width: 250px;
+        height: 150px;
+    }
+
+    #otherProjects h2 {
+        font-size: 1.7rem;
+    }
+
+    #projectContainer #projectContent article p {
+        font-size: 1rem;
+    }
+}

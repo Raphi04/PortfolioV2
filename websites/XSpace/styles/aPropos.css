@@ -1,0 +1,57 @@
+#lastArticle{
+    padding-bottom: 5%;
+}
+.section{
+    width: 72%;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 5%;
+    font-size: 25px;  
+}
+.section > h2 {
+    margin-top: 0;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.section > p {
+    margin-bottom: 30px;
+}
+.bgBlack{
+    background-color: #2F2F2F;
+    color: white;
+}
+hr{
+    margin-top: 5%;
+    width: 90%;
+    color: white;
+}
+#lastArticle{
+    padding-bottom: 5%;
+}
+#teamContainer{
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+}
+#team{
+    width: 100%;
+    margin-top: 3%;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#team > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+#team > article > img {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 7%;
+}

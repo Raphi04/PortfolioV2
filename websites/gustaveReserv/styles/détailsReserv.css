@@ -1,0 +1,178 @@
+html, body{
+    height:100%;
+    width: 100%;
+    margin: 0px;
+    font-family: system-ui, Roboto;
+    background-color: #eaeaea;
+}
+body{
+    margin-top: 80px;
+}
+p{
+    margin: 0px;
+}
+#content{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#conflit{
+    color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:25%;
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: white;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#info{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#up{
+    width: 90%;
+    display: flex;
+}
+#generalInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: white;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+.blue{
+    color:#254598;
+    font-weight: bold;
+}
+#userInfo{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.userName{
+    width:40%
+}
+#userMail{
+    margin-top: 10%;
+    width: 80%;
+}
+#itemImage{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+#down{
+    margin-top: 4%;
+    display: flex;
+    width:90%;
+    justify-content: space-between;
+}
+#dateContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: white;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#reservDate{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.date{
+    width:40%;
+}
+#item{
+    width:300px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#itemInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: white;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#itemName{
+    text-align: center;
+    width: 100%;
+}
+#itemCara{
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cara{
+    text-align: center;
+    width: 50%;
+}
+#traitement{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+#formContainer{
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+}
+.traitButton{
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+    padding: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+    color:white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#refused{
+    background-color: rgb(198, 4, 4);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+#refused:hover{
+    background-color: rgb(153, 4, 4);
+}
+#accepted{
+    background-color: #254598;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+#accepted:hover{
+    background-color: #1f3a7f;
+}

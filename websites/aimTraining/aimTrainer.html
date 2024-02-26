@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="Text/css" href="AimTrainer.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <p class="menuButton" onClick="start()">START THE GAME</p>
+        <p id="text"> You will have 30 secondes to click the circle as much you can</p>
+        <img id="nuit" onClick="night()" src="Ressources/lune.png">
+    </div>
+    <div class="game">
+        <!-- Menu du jeu--> 
+        <div id="gameMenu">
+            <p class="count"></p>
+            <p class="time"></p>
+            <p class="exitGame" onClick="exit()">EXIT GAME</p>
+        </div>
+        <!--Jeu avec le cercle--> 
+        <div class="inGame" onClick="Mistakes()">
+            <div id="circle" onClick="Success()"></div>
+        </div>
+        <!-- Résultat de la partie--> 
+        <div id="resultScreen">
+            <div class="result">
+                <p class="timeResult"></p>
+                <p class="countResult"></p>
+                <p class="mistakes"></p>
+                <p class="exitGame" onClick="exit()">EXIT GAME</p>
+            </div>
+        </div>
+    </div>
+    <script src="AimTrainer.js"></script>
+</body>
+</html>

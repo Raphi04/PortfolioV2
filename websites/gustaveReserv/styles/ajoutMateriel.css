@@ -1,0 +1,156 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin:0px;
+    font-family: system-ui, Roboto;
+    background-color: #eaeaea;
+}
+body{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+input, select{
+    background-color: white;
+    border: 1px solid #254598;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);  
+}
+p{
+    margin:0px;
+}
+#content{
+    margin-top:230px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);  
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    justify-content: center ;
+    align-items: center;
+}
+#itemPresentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+}
+#itemPresentation > img{
+    width:50%;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+}
+#itemPresentation > input{
+    width:50%;
+    padding: 3px;
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, Roboto;
+    margin-top:0px;
+    border-radius: 10px;
+}
+#file{
+    margin-top: 0px !important;
+}
+#itemInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+#itemNom{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    align-items: center;
+}
+#itemNom > article > input {
+    padding-left: 5px;
+    margin-left: 5px;
+}
+#itemNom > article{
+    display: flex;
+    flex-direction: row;
+}
+#itemSpe{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#itemReference{
+    height: 74.8px;
+}
+#itemReference, #itemReference > input{
+    margin-left: 5px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, Roboto;
+}
+.error{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: red;
+}
+#itemType, #itemType > select{
+    margin-left: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, Roboto;
+}
+#advice{
+    align-self: start;
+    margin:0px;
+    margin-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    resize: none;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+    border: 1px solid #254598;
+    border-radius: 15px;
+    padding: 10px;
+}
+#save{
+    margin-top: 10px;
+    right: 5.5%;
+    bottom: 3.5%;
+    cursor: pointer;
+    padding: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: #254598;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    box-shadow: 3px 3px 8px 0px rgb(138, 137, 137);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+#save:hover{
+    background-color: #1f3a7f;
+}

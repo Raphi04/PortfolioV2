@@ -1,174 +1,267 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link rel="icon" type="image/x-icon" href="ressources/favicon.png">
-        <title>Portfolio | Raphael Cadete</title>
-    </head>
-    <body>
-        <header id="menu-desktop">
-            <a href="#">Raphael Cadete</a>
-            <nav>
-                <a href="#accueil" class="headerLink activeHeader" id="nav-accueil">Accueil</a>
-                <a href="#aPropos" class="headerLink" id="nav-aPropos">À propos</a>
-                <a href="#portfolio" class="headerLink" id="nav-portfolio">Portfolio</a>
-            </nav>
-            <a class="darkRedButton" href="php/contact.php">Me contacter</a>
-        </header>
-        <header id="menu-phone">
-            <a href="#">Raphael Cadete</a>
-            <i id="menuIcon" class="fa-solid fa-bars" onClick="Menu()"></i>
-            <nav id="menu-collapse" class="displayNone opacityNone">
-                <ul>
-                    <li><a href="#accueil" onClick="Menu()">Accueil</a></li>
-                    <li><a href="#aPropos" onClick="Menu()">À propos</a></li>
-                    <li><a href="#portfolio" onClick="Menu()">Portfolio</a></li>
-                    <li><a href="php/contact.php" onClick="Menu()">Me contacter</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="accueil" data-sectionName="accueil">
-            <div>
-                <div id="title">
-                    <h2>Raphael Cadete</h2>
-                    <h1>Développeur Web</h1>
-                    <h3>Étudiant en 2ème année de BUT MMI passionné par le développement de site web</h3>
-                    <a href="#aPropos" class="darkRedButton">Découvrir</a>
-                </div>
-            </div>
-        </section>
-        <section id="aPropos" data-sectionName="aPropos">
-            <h2>À PROPOS</h2>
-            <article>
-                <p>Actuellement étudiant en 2ème année de BUT MMI et spécialisé dans le développement de site web, je suis capable de réaliser des sites web tant bien statique que dynamique.</p>
-                <p>Passionné de nouvelles technologies et d’informatique depuis mon enfance, je cherche toujours à en apprendre plus et à me renseigner sur l’actualité.</p>
-            </article>
-            <div id="skillContainer">
-                <div class="skill">
-                    <i class="fa-brands fa-html5"></i>
-                    <p>HTML5</p>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      type="text/css"
+    />
 
-                <div class="skill">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p>CSS3</p>
-                </div>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="ressources/favicon.png" />
 
-                <div class="skill">
-                    <i class="fa-brands fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
+    <title>Portfolio | Raphael Cadete</title>
+  </head>
+  <body>
+    <header id="menu-desktop">
+      <a href="#">Raphael Cadete</a>
+      <nav>
+        <a href="#accueil" class="headerLink activeHeader" id="nav-accueil">
+          Accueil
+        </a>
+        <a href="#aPropos" class="headerLink" id="nav-aPropos">À propos</a>
+        <a href="#portfolio" class="headerLink" id="nav-portfolio">Portfolio</a>
+      </nav>
+      <a class="darkRedButton" href="php/contact.php">Me contacter</a>
+    </header>
 
-                <div class="skill">
-                    <i class="fa-brands fa-php"></i>
-                    <p>PHP</p>
-                </div>
+    <header id="menu-phone">
+      <a href="#">Raphael Cadete</a>
+      <i id="menuIcon" class="fa-solid fa-bars" onClick="Menu()"></i>
+      <nav id="menu-collapse" class="displayNone opacityNone">
+        <ul>
+          <li><a href="#accueil" onClick="Menu()">Accueil</a></li>
+          <li><a href="#aPropos" onClick="Menu()">À propos</a></li>
+          <li><a href="#portfolio" onClick="Menu()">Portfolio</a></li>
+          <li><a href="php/contact.php" onClick="Menu()">Me contacter</a></li>
+        </ul>
+      </nav>
+    </header>
 
-                <div class="skill">
-                    <i class="fa-solid fa-database"></i>
-                    <p>MySQL</p>
-                </div>
+    <section id="accueil" data-sectionName="accueil">
+      <div>
+        <div id="title">
+          <h2>Raphael Cadete</h2>
+          <h1>Développeur Web</h1>
+          <h3>
+            Étudiant en 2ème année de BUT MMI passionné par le développement de
+            site web
+          </h3>
+          <a href="#aPropos" class="darkRedButton">Découvrir</a>
+        </div>
+      </div>
+    </section>
 
-                <div class="skill">
-                    <i class="fa-brands fa-github"></i>
-                    <p>GitHub</p>
-                </div>
-            </div>
-            <a tabindex="0" href="ressources/CV_Cadete_Raphael.pdf" target="_blank">Plus d'informations sur mon CV</a>
-        </section>
-        <hr>
-        <section id="portfolio" data-sectionName="portfolio">
-            <h2>PORTFOLIO</h2>
-            <article>
-                <p>Voici quelques un de mes projets réalisé au cours de ma formation.</p>
-            </article>
-            <div id="selectTag">
-                <div class="tag selectedTag" id="allProjects" onClick="applyFilter('allProjects')">
-                    <p>Tout les projets</p>
-                </div>
-                <div class="tag" id="devProjects" onClick="applyFilter('devProjects')">
-                    <p>Développement</p>
-                </div>
-                <div class="tag" id="graphismProjects" onClick="applyFilter('graphismProjects')">
-                    <p>Graphisme</p>
-                </div>
-                <div class="tag" id="redactionProjects" onClick="applyFilter('redactionProjects')">
-                    <p>Rédaction</p>
-                </div>
-            </div>
-            <div id="projectsContainer">
-                <a href="pages/acf2l.html" onMouseOver="displayMoreInfo('ACF2L_MoreInfo')" onMouseLeave="hideMoreInfo('ACF2L_MoreInfo')">
-                    <div class="projectMoreInfo" id="ACF2L_MoreInfo">
-                        <h4 class="displayNone">Site de réservation</h4>
-                        <p class="displayNone">ACF2L</p>
-                    </div>
-                    <div class="project dev" id="ACF2L"></div>
-                </a>
-                <a href="pages/avengedSevenFold.html" onMouseOver="displayMoreInfo('avengedSevendFold_MoreInfo')" onMouseLeave="hideMoreInfo('avengedSevendFold_MoreInfo')">
-                    <div class="projectMoreInfo" id="avengedSevendFold_MoreInfo">
-                        <h4 class="displayNone">Pochette CD</h4>
-                        <p class="displayNone">Avenged Sevenfold</p>
-                    </div>
-                    <div class="project graphism" id="avengedSevenFold"></div>
-                </a>
-                <a href="pages/vivy.html" onMouseOver="displayMoreInfo('vivy_MoreInfo')" onMouseLeave="hideMoreInfo('vivy_MoreInfo')">
-                    <div class="projectMoreInfo" id="vivy_MoreInfo">
-                        <h4 class="displayNone">Écriture journalistique</h4>
-                        <p class="displayNone">Vivy: Fluorite Eye's Song</p>
-                    </div>
-                    <div class="project redaction" id="vivy"></div>
-                </a>
-                <a href="pages/gustave.html" onMouseOver="displayMoreInfo('gustaveReserv_MoreInfo')" onMouseLeave="hideMoreInfo('gustaveReserv_MoreInfo')">
-                    <div class="projectMoreInfo" id="gustaveReserv_MoreInfo">
-                        <h4 class="displayNone">Site de réservation</h4>
-                        <p class="displayNone">Gustave Eiffel</p>
-                    </div>
-                    <div class="project dev" id="gustaveReserv"></div>
-                </a>
-                <a href="pages/magazine.html" onMouseOver="displayMoreInfo('magazine_MoreInfo')" onMouseLeave="hideMoreInfo('magazine_MoreInfo')">
-                    <div class="projectMoreInfo" id="magazine_MoreInfo">
-                        <h4 class="displayNone">Production graphique</h4>
-                        <p class="displayNone">Magazine de mode</p>
-                    </div>
-                    <div class="project graphism" id="magazine"></div>
-                </a>
-                <a href="pages/jeu.html" onMouseOver="displayMoreInfo('aimTrainer_MoreInfo')" onMouseLeave="hideMoreInfo('aimTrainer_MoreInfo')">
-                    <div class="projectMoreInfo" id="aimTrainer_MoreInfo">
-                        <h4 class="displayNone">Site web intéractif</h4>
-                        <p class="displayNone">Jeu de visée</p>
-                    </div>
-                    <div class="project dev" id="aimTrainer"></div>
-                </a>
-                <a href="pages/razer.html" onMouseOver="displayMoreInfo('razer_MoreInfo')" onMouseLeave="hideMoreInfo('razer_MoreInfo')">
-                    <div class="projectMoreInfo" id="razer_MoreInfo">
-                        <h4 class="displayNone">Article de recommandation</h4>
-                        <p class="displayNone">Razer Kraken Pro V2</p>
-                    </div>
-                    <div class="project redaction" id="razer"></div>
-                </a>
-                <a href="pages/xspace.html" onMouseOver="displayMoreInfo('xspace_MoreInfo')" onMouseLeave="hideMoreInfo('xspace_MoreInfo')">
-                    <div class="projectMoreInfo" id="xspace_MoreInfo">
-                        <h4 class="displayNone">Site web vitrine</h4>
-                        <p class="displayNone">XSpace</p>
-                    </div>
-                    <div class="project dev" id="XSpace"></div>
-                </a>
-                <a href="pages/salaire.html" onMouseOver="displayMoreInfo('calculSalaire_MoreInfo')" onMouseLeave="hideMoreInfo('calculSalaire_MoreInfo')">
-                    <div class="projectMoreInfo" id="calculSalaire_MoreInfo">
-                        <h4 class="displayNone">Outils en ligne</h4>
-                        <p class="displayNone">Calcul salaire</p>
-                    </div>
-                    <div class="project dev" id="calculSalaire"></div>
-                </a>
-            </div>
-        </section>
-        <footer>
-            <p>© Raphael Cadete - 2024</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    <section id="aPropos" data-sectionName="aPropos">
+      <h2>À PROPOS</h2>
+      <article>
+        <p>
+          Actuellement étudiant en 2ème année de BUT MMI et spécialisé dans le
+          développement de site web, je suis capable de réaliser des sites web
+          tant bien statique que dynamique.
+        </p>
+        <p>
+          Passionné de nouvelles technologies et d’informatique depuis mon
+          enfance, je cherche toujours à en apprendre plus et à me renseigner
+          sur l’actualité.
+        </p>
+      </article>
+      <div id="skillContainer">
+        <div class="skill">
+          <i class="fa-brands fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-css3-alt"></i>
+          <p>CSS3</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-php"></i>
+          <p>PHP</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-solid fa-database"></i>
+          <p>MySQL</p>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-github"></i>
+          <p>GitHub</p>
+        </div>
+      </div>
+      <a tabindex="0" href="ressources/Raphael_Cadete_CV.pdf" target="_blank">
+        Plus d'informations sur mon CV
+      </a>
+    </section>
+
+    <hr />
+
+    <section id="portfolio" data-sectionName="portfolio">
+      <h2>PORTFOLIO</h2>
+      <article>
+        <p>
+          Voici quelques un de mes projets réalisé au cours de ma formation.
+        </p>
+      </article>
+      <div id="selectTag">
+        <div
+          class="tag selectedTag"
+          id="allProjects"
+          onClick="applyFilter('allProjects')"
+        >
+          <p>Tout les projets</p>
+        </div>
+
+        <div class="tag" id="devProjects" onClick="applyFilter('devProjects')">
+          <p>Développement</p>
+        </div>
+
+        <div
+          class="tag"
+          id="graphismProjects"
+          onClick="applyFilter('graphismProjects')"
+        >
+          <p>Graphisme</p>
+        </div>
+
+        <div
+          class="tag"
+          id="redactionProjects"
+          onClick="applyFilter('redactionProjects')"
+        >
+          <p>Rédaction</p>
+        </div>
+      </div>
+
+      <div id="projectsContainer">
+        <a
+          href="pages/acf2l.html"
+          onMouseOver="displayMoreInfo('ACF2L_MoreInfo')"
+          onMouseLeave="displayMoreInfo('ACF2L_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="ACF2L_MoreInfo">
+            <h4 class="displayNone">Site de réservation</h4>
+            <p class="displayNone">ACF2L</p>
+          </div>
+          <div class="project dev" id="ACF2L"></div>
+        </a>
+
+        <a
+          href="pages/avengedSevenFold.html"
+          onMouseOver="displayMoreInfo('avengedSevendFold_MoreInfo')"
+          onMouseLeave="displayMoreInfo('avengedSevendFold_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="avengedSevendFold_MoreInfo">
+            <h4 class="displayNone">Pochette CD</h4>
+            <p class="displayNone">Avenged Sevenfold</p>
+          </div>
+          <div class="project graphism" id="avengedSevenFold"></div>
+        </a>
+
+        <a
+          href="pages/vivy.html"
+          onMouseOver="displayMoreInfo('vivy_MoreInfo')"
+          onMouseLeave="displayMoreInfo('vivy_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="vivy_MoreInfo">
+            <h4 class="displayNone">Écriture journalistique</h4>
+            <p class="displayNone">Vivy: Fluorite Eye's Song</p>
+          </div>
+          <div class="project redaction" id="vivy"></div>
+        </a>
+
+        <a
+          href="pages/gustave.html"
+          onMouseOver="displayMoreInfo('gustaveReserv_MoreInfo')"
+          onMouseLeave="displayMoreInfo('gustaveReserv_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="gustaveReserv_MoreInfo">
+            <h4 class="displayNone">Site de réservation</h4>
+            <p class="displayNone">Gustave Eiffel</p>
+          </div>
+          <div class="project dev" id="gustaveReserv"></div>
+        </a>
+
+        <a
+          href="pages/magazine.html"
+          onMouseOver="displayMoreInfo('magazine_MoreInfo')"
+          onMouseLeave="displayMoreInfo('magazine_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="magazine_MoreInfo">
+            <h4 class="displayNone">Production graphique</h4>
+            <p class="displayNone">Magazine de mode</p>
+          </div>
+          <div class="project graphism" id="magazine"></div>
+        </a>
+
+        <a
+          href="pages/jeu.html"
+          onMouseOver="displayMoreInfo('aimTrainer_MoreInfo')"
+          onMouseLeave="displayMoreInfo('aimTrainer_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="aimTrainer_MoreInfo">
+            <h4 class="displayNone">Site web intéractif</h4>
+            <p class="displayNone">Jeu de visée</p>
+          </div>
+          <div class="project dev" id="aimTrainer"></div>
+        </a>
+
+        <a
+          href="pages/razer.html"
+          onMouseOver="displayMoreInfo('razer_MoreInfo')"
+          onMouseLeave="displayMoreInfo('razer_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="razer_MoreInfo">
+            <h4 class="displayNone">Article de recommandation</h4>
+            <p class="displayNone">Razer Kraken Pro V2</p>
+          </div>
+          <div class="project redaction" id="razer"></div>
+        </a>
+
+        <a
+          href="pages/xspace.html"
+          onMouseOver="displayMoreInfo('xspace_MoreInfo')"
+          onMouseLeave="displayMoreInfo('xspace_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="xspace_MoreInfo">
+            <h4 class="displayNone">Site web vitrine</h4>
+            <p class="displayNone">XSpace</p>
+          </div>
+          <div class="project dev" id="XSpace"></div>
+        </a>
+
+        <a
+          href="pages/salaire.html"
+          onMouseOver="displayMoreInfo('calculSalaire_MoreInfo')"
+          onMouseLeave="displayMoreInfo('calculSalaire_MoreInfo')"
+        >
+          <div class="projectMoreInfo" id="calculSalaire_MoreInfo">
+            <h4 class="displayNone">Outils en ligne</h4>
+            <p class="displayNone">Calcul salaire</p>
+          </div>
+          <div class="project dev" id="calculSalaire"></div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Raphael Cadete - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

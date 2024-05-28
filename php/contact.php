@@ -50,7 +50,7 @@
         </header>
         <section id="aPropos" data-sectionName="aPropos">
             <h2>En cours de développement</h2>
-            <a tabindex="0" href="../ressources/CV_Cadete_Raphael.pdf" target="_blank">Plus d'informations sur mon CV</a>
+            <a tabindex="0" href="../ressources/Raphael_Cadete_CV.pdf" target="_blank">Plus d'informations sur mon CV</a>
         </section>
     </body>
 </html>
